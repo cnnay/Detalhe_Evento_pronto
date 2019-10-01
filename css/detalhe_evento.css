@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff2b34;
+    --black: #222;
+    --white: #fff;
+    --texto: 'Open Sans', sans-serif;
+}
+
+a, p {
+    font-family: var(--texto)
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--texto);
+}
+
+.detalhe_eventos__paiBanner img {
+    width: 100%;
+    height: 500px;
+    filter: blur(10px);
+    position: absolute;
+    z-index: 1;
+}
+
+.detalhe_eventos__filhoBanner {
+    width: 70%;
+    height: 500px;
+}
+
+.detalhe_eventos__filhoBanner img {
+    width: 70%;
+}
+
+#detalhe_eventos__conteudo {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    margin-top: 10em;
+}
+
+#detalhe_eventos__conteudo i {
+    width: 30px;
+    height: 30px;
+    right: 284px;
+}
+
+.detalhe_eventos__filho {
+    display: flex;
+    justify-content: center;
+}
+
+.detalhe_eventos__filhoBanner img {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.detalhe_eventos__info {
+    display: flex;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 769px) {
+    /* tablet */
+    header {
+        display: none
+    }
+    .detalhe_eventos__paiBanner {
+        display: none
+    }
+    .detalhe_eventos__filhoBanner img {
+        width: 100%;
+    }
+    .detalhe_eventos__filho {
+        justify-content: end
+    }
+    #detalhe_eventos__conteudo {
+        height: 0;
+        margin-top: 0;
+    }
+    .detalhe_eventos__filhoBanner {
+        width: 70%;
+        height: 467px;
+}
+
+@media screen and (max-width: 376px){
+    /* mobile */
+
+        header {
+            display: none;
+        }
+        .detalhe_eventos__paiBanner {
+            display: none
+        }
+        .detalhe_eventos__filhoBanner img {
+            width: 100%;
+        }
+        .detalhe_eventos__filho {
+            justify-content: end
+        }
+        #detalhe_eventos__conteudo {
+            height: 0;
+            margin-top: 0;
+        }
+        .detalhe_eventos__filhoBanner {
+            width: 70%;
+            height:275px;
+    }
+}    
